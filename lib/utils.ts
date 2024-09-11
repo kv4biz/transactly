@@ -282,5 +282,5 @@ export const authFormSchema = (type: string) =>
         : z
             .string()
             .min(2, "State must be at least 2 characters long")
-            .max(50, "State can be at most 50 characters long"),
+            .max(2, "State can be at most 2 characters long"),
   });
