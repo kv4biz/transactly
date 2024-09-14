@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Footer from "./Footer";
+import PlaidLink from "./PlaidLink";
 
 const Sidebar = ({ user }: SiderbarProps) => {
   const pathname = usePathname();
@@ -14,10 +15,10 @@ const Sidebar = ({ user }: SiderbarProps) => {
         <Link href="/" className="mb-10 cursor-pointer flex items-center gap-2">
           <Image
             src="/icons/logo.svg"
-            width={40}
-            height={40}
+            width={32}
+            height={32}
             alt="Transactly-logo"
-            className="size-[32px] max-xl:size-16"
+            className="size-[24px] max-xl:size-12"
           />
           <h1 className="sidebar-logo">Transactly</h1>
         </Link>
@@ -46,7 +47,7 @@ const Sidebar = ({ user }: SiderbarProps) => {
             </Link>
           );
         })}
-        user
+        <PlaidLink user={user} />
       </nav>
       <Footer user={user} type="desktop" />
     </section>

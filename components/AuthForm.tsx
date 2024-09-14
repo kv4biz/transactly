@@ -57,7 +57,7 @@ const AuthForm = ({ type }: { type: string }) => {
           password: data.password,
         });
         if (response) {
-          router.push("/");
+          router.push("/home");
           toast.success("Signed in successfully!");
         } else {
           toast.error("Invalid credentials. Please try again.");

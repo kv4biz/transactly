@@ -1,3 +1,4 @@
+"use client";
 import React, { useCallback, useEffect, useState } from "react";
 import { Button } from "./ui/button";
 import {
@@ -35,7 +36,7 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
         user,
       });
 
-      router.push("/");
+      router.push("/home");
     },
     [user]
   );
@@ -56,7 +57,7 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
           className="plaidlink-primary gap-2"
         >
           <Landmark />
-          Connect bank
+          Connect Bank
         </Button>
       ) : variant === "ghost" ? (
         <Button
@@ -64,25 +65,31 @@ const PlaidLink = ({ user, variant }: PlaidLinkProps) => {
           variant="ghost"
           className="plaidlink-ghost"
         >
-          <Image
-            src="/icons/connect-bank.svg"
-            alt="connect bank"
-            width={24}
-            height={24}
-          />
-          <p className="hiddenl text-[16px] font-semibold text-black-2 xl:block">
-            Connect bank
+          <div className="relative size-6">
+            <Image
+              src="/icons/connect-bank.svg"
+              alt="connect bank"
+              width={32}
+              height={32}
+            />
+          </div>
+          <p className="text-[14px] font-semibold text-black-2 block md:hidden lg:hidden xl:block">
+            Connect Bank
           </p>
         </Button>
       ) : (
         <Button onClick={() => open()} className="plaidlink-default">
-          <Image
-            src="/icons/connect-bank.svg"
-            alt="connect bank"
-            width={24}
-            height={24}
-          />
-          <p className="text-[16px] font-semibold text-black-2">Connect bank</p>
+          <div className="relative size-6">
+            <Image
+              src="/icons/connect-bank.svg"
+              alt="connect bank"
+              width={32}
+              height={32}
+            />
+          </div>
+          <p className="text-[14px] font-semibold text-black-2 block md:hidden lg:hidden xl:block">
+            Connect Bank
+          </p>
         </Button>
       )}
     </>

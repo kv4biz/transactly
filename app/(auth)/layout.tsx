@@ -15,7 +15,7 @@ export default function RootLayout({
             alt="auth Image"
             width={600}
             height={600}
-            className="h-full"
+            className="h-[500PX]"
           />
         </div>
       </div>
