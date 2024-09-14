@@ -41,7 +41,7 @@ const LandingPage = () => {
             showcases advanced skills and knowledge in building cutting-edge
             fintech solutions.
           </p>
-          <div className="flex justify-center space-y-4 sm:space-y-0 sm:space-x-2 md:space-x-4">
+          <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 md:space-x-8">
             <Link href="/sign-up">
               <Button className="button-primary w-full sm:w-auto">
                 Get Started <MoveUpRight className="ml-2 h-4 w-4" />
