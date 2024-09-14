@@ -387,50 +387,18 @@
   /* Landing Page */
 
   .landing-container {
-    @apply min-h-screen flex flex-col bg-white text-black-1 font-inter;
+    @apply min-h-screen flex flex-col bg-white text-black-1 font-inter overflow-hidden items-center;
   }
 
   .landing-main {
-    @apply mx-auto grid max-w-screen-lg px-4 text-center py-16;
+    @apply mx-auto px-4 text-center py-16;
   }
 
   .landing-footer {
     @apply bottom-0 text-sm text-black-3 text-center z-10 pt-4;
   }
 
-  .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20;
-  }
-
-  .section-title {
-    @apply text-3xl sm:text-4xl font-bold text-black-1 mb-6 text-center;
-  }
-
-  .section-subtitle {
-    @apply text-xl text-gray-300 mb-8 text-center max-w-2xl mx-auto;
-  }
-
   .button-primary {
     @apply bg-blue-500 w-[200px] items-center text-white px-6 py-3 rounded-md font-semibold hover:bg-blue-600 transition-colors;
-  }
-
-  .feature-grid {
-    @apply grid grid-cols-1 md:grid-cols-3 gap-8;
-  }
-
-  .feature-item {
-    @apply flex flex-col items-center text-center;
-  }
-
-  .feature-icon {
-    @apply bg-blue-900 text-blue-300 rounded-full w-16 h-16 flex items-center justify-center mb-4;
-  }
-
-  .feature-title {
-    @apply text-xl font-semibold mb-2 text-white;
-  }
-
-  .feature-description {
-    @apply text-gray-400;
   }
 }
