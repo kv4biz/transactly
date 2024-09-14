@@ -37,9 +37,10 @@ const LandingPage = () => {
           </p>
           <p className="mb-6 sm:mb-8 font-light text-gray-700 text-sm sm:text-base md:text-lg max-w-3xl">
             Transactly is a powerful platform designed to track all your
-            transactions across multiple banks. Created by kv4biz, this project
-            showcases advanced skills and knowledge in building cutting-edge
-            fintech solutions.
+            transactions across multiple banks. Created by{" "}
+            <span className="font-semibold">Kayode Victor</span>
+            (kv4biz), this project showcases advanced skills and knowledge in
+            building cutting-edge fintech solutions.
           </p>
           <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4 md:space-x-8">
             <Link href="/sign-up">
